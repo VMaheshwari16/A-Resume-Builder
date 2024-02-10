@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<title>Details</title>
+<style>
+    h1{
+text-align:center;
+font-size:35px;
+color:#19e13b;
+text-shadow: 10px 2px 13px #ff00ff80;
+}
+#first{
+    width: 750px;
+    height: 3020px;
+    color:#9C27B0;
+    margin: auto;
+padding:30px;
+box-shadow: 0 0 10px 0px #9E9E9E;
+border-radius:20px;
+}
+h2{
+text-align:center;
+}
+#first div{
+    width: 750px;
+    height: 350px;
+}
+#first div input{
+    width: 250px;
+    height: 20px;
+    margin-left:70px;
+    margin-top:20px;
+padding:10px;
+}
+#first .pro input{
+    width: 600px;
+    height: 20px;
+    margin-left:70px;
+    margin-top:20px;
+padding:10px;
+}
+textarea{
+    width:250px;
+    height: 20px;
+    padding:10px;
+    margin-top:20px;
+    margin-left:70px;
+}
+#first .but{
+  border: none;
+  outline: 0;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+height:40px;
+  font-size: 20px;
+ border-radius:10px;
+margin-top:80px;
+}
+#first .but:hover
+{
+  opacity: 0.7;
+}
+hr{
+box-shadow: 0 0 8px 0px #ff00ff80;
+}
+textarea{
+    width:600px;
+    height: 50px;
+    margin-top:20px;
+    margin-left:70px;
+}
+#file{
+      width: 150px;
+height:40px;
+}
+</style>
+</head>
+<body>
+<div id="first">
+    <h1><u>Build your Resume with SmartCV</u></h1>
+<form method="post" action="details.jsp">
+
+<div>
+<h2><u>Personal Details</u></h2>
+<input type="text" placeholder="Name" name="name"  required>
+<input type="email" placeholder="Email" name="email" required><br>
+<input type="number" placeholder="Phone number" name="phone" required>
+<input type="text" placeholder="Linked in" name="linkedin"><br>
+<input type="text" placeholder="github" name="github">
+<input type="file" id="file" accept="image/png, image/gif, image/jpeg" name="photo">
+<textarea placeholder="Description" name="profile" required></textarea>
+</div><hr>
+
+
+<div>
+<h2><u>Education Details</u></h2>
+<h2>College</h2>
+<input type="text" placeholder="College" name="college" required>
+<input type="text" placeholder="Qualification" name="qualification_college" required><br>
+<input type="number" placeholder="start year" name="startyear_college">
+<input type="number" placeholder="end year" name="endyear_college"><br>
+<input type="text" placeholder="City" name="city_college">
+<input type="text" placeholder="Country" name="country_college"><br>
+<input type="text" placeholder="Percentage" name="percentage_college">
+</div>
+<div>
+<h2>School</h2>
+<input type="text" placeholder="School" name="school" required>
+<input type="text" placeholder="Qualification" name="qualification_school" required><br>
+<input type="number" placeholder="start year" name="startyear_school">
+<input type="number" placeholder="end year" name="endyear_school"><br>
+<input type="text" placeholder="City" name="city_school">
+<input type="text" placeholder="Country" name="country_school"><br>
+<input type="text" placeholder="Percentage" name="percentage_school">
+</div><hr>
+
+<div class="pro">
+    <h2><u>Project Details</u></h2>
+<h2>Project 1</h2>
+<input type="text" placeholder="Title" name="title_project1"><br>
+<input type="text" placeholder="Link" name="link_project1"><br>
+<input type="text" placeholder="Description" name="Description_project1">
+</div>
+<div class="pro">
+<h2>Project 2</h2>
+<input type="text" placeholder="Title" name="title_project2"><br>
+<input type="text" placeholder="Link" name="link_project2"><br>
+<input type="text" placeholder="Description" name="Description_project2"><br>
+</div><hr>
+
+<div>
+<h2><u>  Extra Details</u></h2>
+<h2>Skills</h2>
+<input type="text" placeholder="Skill 1" name="skill1">
+<input type="text" placeholder="Skill 2" name="skill2"><br>
+<input type="text" placeholder="Skill 3" name="skill3">
+<input type="text" placeholder="Skill 4" name="skill4"><br>
+<input type="text" placeholder="Skill 5" name="skill5">
+<input type="text" placeholder="Skill 6" name="skill6"><br>
+</div><hr>
+<div>
+<h2>Interest</h2>
+<input type="text" placeholder="Interest 1" name="interest1">
+<input type="text" placeholder="Interest 2" name="interest2"><br>
+<input type="text" placeholder="Interest 3" name="interest3">
+<input type="text" placeholder="Interest 4" name="interest4"><br>
+<input type="text" placeholder="Interest 5" name="interest5">
+<input type="text" placeholder="Interest 6" name="interest6"><br>
+</div><hr>
+<div>
+<h2>Language Known</h2>
+<input type="text" placeholder="Language 1" name="language1">
+<input type="text" placeholder="Language 2" name="language2"><br>
+
+<input type="Reset" value="Cancel" class="but" style="margin-left:370px;">
+<input type="submit" value="Submit" class="but">
+</div>
+
+</form>
+</div>
+</body>
+</html>

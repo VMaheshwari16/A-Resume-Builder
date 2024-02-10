@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<title>Login</title>
+<style>
+#login{
+width:380px;
+height:450px;
+margin:auto;
+padding:20px;
+margin-top:60px;
+box-shadow: 0 0 20px 0px #9E9E9E;
+ border-radius:20px;
+}
+#log{
+margin-top:20px;
+width:400px;
+height:200px;
+font-size:25px;
+padding:15px;
+}
+#user,#pwd{
+width:200px;
+height:25px;
+}
+#signin{
+  border: none;
+  outline: 0;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+height:35px;
+margin-left:130px;
+  font-size: 20px;
+ border-radius:10px;
+}
+#logo{
+height:200px;
+width:200px;
+margin-top:20px;
+margin-left:100px;
+box-shadow: 0 0 20px 0px #E91E63;
+border-radius:50%;
+}
+#signin{
+  border: none;
+  outline: 0;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+height:35px;
+margin-left:130px;
+  font-size: 20px;
+ border-radius:10px;
+}
+</style>
+<script>
+function load(){
+    var a=document.getElementById("id").value;
+    var b=document.getElementById("pwd").value;
+    if(a!="mahesh")
+    {
+        alert("Invalid username or password");
+    }
+}
+</script>
+</head>
+<body>
+<div id="first">
+
+<div id="login">
+<img id="logo" src="1.png">
+<div id="log">
+    <p id="error"></p>
+<form action="details.html" method="post"  name="loginform" onsubmit="function load()">
+<label>Username:</label>
+<input type="text" name="id" id="id" required><br><br>
+<label>Password:</label>
+<input type="password" name="pwd" id="g" required><br><br>
+<input type="submit" value="Sign in" id="signin">
+</form>
+ click to &nbsp;<a href="reg.html">sign up</a>
+</div>
+</div>
+
+</div>
+</body>
+</html>
